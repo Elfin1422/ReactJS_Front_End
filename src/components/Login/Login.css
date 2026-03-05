@@ -1,0 +1,131 @@
+/* Container Layout */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #c4f7e6; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left Section Styles */
+.brand-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.brand-title {
+  font-size: 4rem;
+  color: #316ad4; 
+  margin: 0;
+  font-weight: bold;
+}
+
+.brand-subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Right Section Styles */
+.form-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: rgb(199, 252, 174);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 400px;
+  text-align: center;
+}
+
+.welcome-text { 
+  color: #316ad4;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.signin-text {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-bottom: 2px solid #316ad4;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #316ad4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 25px 0;
+}
+
+.create-account-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #316ad4; /* Yellow */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-account-btn:hover {
+  background-color: #f9a825;
+}
