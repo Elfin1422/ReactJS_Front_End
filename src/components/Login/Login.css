@@ -1,10 +1,10 @@
-/* Ensure the body doesn't have a default background or margin */
+
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #b2f2e1; /* Mint green globally */
+  background-color: #b2f2e1; 
 }
 
 .login-container {
@@ -18,7 +18,7 @@ html, body {
   gap: 150px;              
 }
 
-/* --- Brand Section (Left) --- */
+
 .brand-section {
   text-align: left;
 }
@@ -36,7 +36,7 @@ html, body {
   margin-top: 0;
 }
 
-/* --- Form Section (Right) --- */
+
 .login-card {
   background-color: #ccffaa; 
   padding: 50px 40px;
@@ -59,7 +59,7 @@ html, body {
   margin-bottom: 35px;
 }
 
-/* --- Input Fields --- */
+
 .input-group {
   text-align: left;
   margin-bottom: 20px;
@@ -82,7 +82,7 @@ html, body {
   color: #333333;
 }
 
-/* --- Buttons --- */
+
 .login-btn, .create-account-btn {
   width: 100%;
   padding: 14px;

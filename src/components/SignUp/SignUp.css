@@ -1,4 +1,4 @@
-/* Layout Container */
+
 .signup-page-container {
   display: flex;
   height: 100vh;
@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-/* Brand Section Styling */
+
 .brand-section {
   flex: 1;
   padding-left: 10%;
@@ -28,7 +28,7 @@
   margin-top: 10px;
 }
 
-/* Card Section Styling */
+
 .form-section {
   flex: 1;
   display: flex;
@@ -56,7 +56,7 @@
   font-size: 0.9rem;
 }
 
-/* Input Styles */
+
 .input-group {
   text-align: left;
   margin-bottom: 15px;
@@ -80,7 +80,7 @@
   box-sizing: border-box;
 }
 
-/* Buttons and Links */
+
 .signup-btn, .back-login-btn {
   width: 100%;
   padding: 12px;

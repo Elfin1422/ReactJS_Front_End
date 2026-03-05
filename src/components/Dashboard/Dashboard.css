@@ -6,7 +6,7 @@
   color: #333;
 }
 
-/* Sidebar Styling */
+
 .sidebar {
   width: 260px;
   background-color: #316ad4; 
@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-/* Main Content Styling */
+
 .main-content {
   flex-grow: 1;
   padding: 40px;
@@ -73,7 +73,7 @@
   color: #222;
 }
 
-/* Dashboard Cards */
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -106,7 +106,7 @@
   color: #999;
 }
 
-/* Progress Bar */
+
 .progress-bar-bg {
   height: 8px;
   background: #eee;
@@ -121,7 +121,7 @@
   transition: width 0.5s ease-in-out;
 }
 
-/* Options Form */
+
 .settings-card {
   background: rgb(199, 252, 174);
   padding: 30px;
