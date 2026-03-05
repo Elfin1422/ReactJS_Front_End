@@ -5,16 +5,19 @@ import './Login.css';
 const Login = () => {
   const navigate = useNavigate(); 
 
-  
   const handleLoginClick = () => {
     navigate('/dashboard'); 
+  };
+
+  const handleCreateAccountClick = () => {
+    navigate('/signup'); 
   };
 
   return (
     <div className="login-container">
       <div className="brand-section">
         <h1 className="brand-title">Fundraising</h1>
-        <p className="brand-subtitle">Rasing Funds for a Cause</p>
+        <p className="brand-subtitle">Raising Funds for a Cause</p>
       </div>
 
       <div className="form-section">
@@ -33,7 +36,6 @@ const Login = () => {
               <input type="password" placeholder="********" />
             </div>
 
-            
             <button 
               type="button" 
               className="login-btn" 
@@ -44,7 +46,14 @@ const Login = () => {
             
             <a href="#" className="forgot-password">Forgot password?</a>
             <div className="divider"></div>
-            <button type="button" className="create-account-btn">Create new account</button>
+            
+            <button 
+              type="button" 
+              className="create-account-btn"
+              onClick={handleCreateAccountClick}
+            >
+              Create new account
+            </button>
           </div>
         </div>
       </div>

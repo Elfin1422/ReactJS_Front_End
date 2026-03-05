@@ -65,7 +65,6 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      {/* Sidebar */}
       <div className="sidebar">
         <div className="sidebar-brand">Fundraiser</div>
         <nav className="sidebar-nav">
@@ -89,7 +88,6 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Main Body */}
       <main className="main-content">
         {renderContent()}
       </main>

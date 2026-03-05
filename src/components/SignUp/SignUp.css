@@ -1,0 +1,111 @@
+/* Layout Container */
+.signup-page-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #b2f2e1; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Brand Section Styling */
+.brand-section {
+  flex: 1;
+  padding-left: 10%;
+}
+
+.brand-title {
+  font-size: 5rem;
+  color: #3b82f6;
+  margin: 0;
+  font-weight: 800;
+}
+
+.brand-subtitle {
+  font-size: 1.5rem;
+  color: #374151;
+  margin-top: 10px;
+}
+
+/* Card Section Styling */
+.form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-card {
+  background-color: #ccffaa; 
+  padding: 40px;
+  border-radius: 20px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-text {
+  color: #3b82f6;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.signin-text {
+  color: #4b5563;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+/* Input Styles */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  color: #374151;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #374151;
+  color: white;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Buttons and Links */
+.signup-btn, .back-login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3b82f6; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signup-btn:hover, .back-login-btn:hover {
+  filter: brightness(1.1);
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.login-link-text {
+  font-size: 0.85rem;
+  color: #374151;
+  margin-bottom: 10px;
+}
