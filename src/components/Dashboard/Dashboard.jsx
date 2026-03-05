@@ -83,7 +83,6 @@ const Dashboard = () => {
           </button>
         </nav>
         <div className="sidebar-footer">
-          {/* Attached the handleLogout function here */}
           <button className="logout-btn" onClick={handleLogout}>
             Logout
           </button>

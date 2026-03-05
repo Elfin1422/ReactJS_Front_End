@@ -5,7 +5,7 @@ import './Login.css';
 const Login = () => {
   const navigate = useNavigate(); 
 
-  // This function runs immediately when the button is clicked
+  
   const handleLoginClick = () => {
     navigate('/dashboard'); 
   };
@@ -33,7 +33,7 @@ const Login = () => {
               <input type="password" placeholder="********" />
             </div>
 
-            {/* Unconditional click handler */}
+            
             <button 
               type="button" 
               className="login-btn" 
