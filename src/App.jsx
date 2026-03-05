@@ -9,13 +9,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* 1. This sets the default page to Login when you run the app */}
-        <Route path="/" element={<Login />} />
         
-        {/* 2. This defines the route for your Dashboard */}
+        <Route path="/" element={<Login />} />
+               
         <Route path="/dashboard" element={<Dashboard />} />
 
-        {/* 3. Catch-all: If the user types a random URL, send them back to Login */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
