@@ -11,13 +11,11 @@ const SignUp = () => {
 
   return (
     <div className="signup-page-container">
-      {/* Brand Side (Left) */}
       <div className="brand-section">
         <h1 className="brand-title">Fundraising</h1>
         <p className="brand-subtitle">Raising Funds for a Cause</p>
       </div>
 
-      {/* Form Side (Right) */}
       <div className="form-section">
         <div className="signup-card">
           <h2 className="welcome-text">Create Account</h2>
