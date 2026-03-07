@@ -1,12 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react'; // Added useState
 import { useNavigate } from 'react-router-dom'; 
+import api from "../../api/axios"; // Import your axios configuration
 import './Login.css';
 
 const Login = () => {
   const navigate = useNavigate(); 
+  
+  // 1. Create states to hold the input values
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
-  const handleLoginClick = () => {
-    navigate('/dashboard'); 
+  // 2. Handle the Actual Login Logic
+  const handleLoginClick = async (e) => {
+    e.preventDefault(); // Prevent page reload
+    setError(''); // Clear previous errors
+
+    try {
+      // Send POST request to your Laravel API
+      const response = await api.post('/login', {
+        email: email,
+        password: password
+      });
+
+      // Save the token returned by your AuthController
+      localStorage.setItem('ACCESS_TOKEN', response.data.token);
+      
+      // Success! Go to dashboard
+      navigate('/dashboard'); 
+    } catch (err) {
+      // Handle errors (Invalid credentials, etc.)
+      setError(err.response?.data?.message || 'Login failed. Please try again.');
+      console.error(err);
+    }
   };
 
   const handleCreateAccountClick = () => {
@@ -25,21 +51,35 @@ const Login = () => {
           <h2 className="welcome-text">Welcome Back!</h2>
           <p className="signin-text">Sign in to your account</p>
 
-          <div className="login-form">
+          {/* Show error message if login fails */}
+          {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
+
+          <form className="login-form" onSubmit={handleLoginClick}>
             <div className="input-group">
               <label>Email</label>
-              <input type="email" placeholder="example@example.com" />
+              <input 
+                type="email" 
+                placeholder="example@example.com" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)} // Update state
+                required
+              />
             </div>
 
             <div className="input-group">
               <label>Password</label>
-              <input type="password" placeholder="********" />
+              <input 
+                type="password" 
+                placeholder="********" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)} // Update state
+                required
+              />
             </div>
 
             <button 
-              type="button" 
+              type="submit" // Changed from "button" to "submit"
               className="login-btn" 
-              onClick={handleLoginClick}
             >
               Login
             </button>
@@ -54,7 +94,7 @@ const Login = () => {
             >
               Create new account
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
